@@ -55,7 +55,7 @@ export class SongListComponent implements OnInit {
             desc: 'Pushpa : Part-1'
           },
           {
-            path: 'https://www.india.com/wp-content/uploads/2022/01/pjimage-2022-01-17T131217.775.jpg',
+            path: 'https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/samantha_dance_number_oo_antava.jpg',
             name: 'O Antava',
             desc: 'Pushpa : Part-1'
           },
