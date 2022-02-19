@@ -1,0 +1,27 @@
+<!-- <div class="container pt-2">
+    <div class="row">
+      <div class="col-6 row card-height" *ngFor="let song of librarySongs;; let first = first;">
+        <div class="col-4 text-center" [class.likedBg]="first">
+            <i *ngIf="first" class="fa fa-heart cardCss text-white"></i>
+            <img *ngIf="!first" class="cardImg" [src]="song.path" alt="">
+          </div>
+          <div class="col-8 cardCss">
+            <small>{{song.title}}</small>
+          </div>
+      </div>
+    </div>
+  </div> -->
+
+<div class="p-2">
+    
+    <div class="row m-0">
+        <div *ngFor="let song of librarySongs;let first = first; let last=last" class="card-height col-6 border border-secondary row m-0 mb-1">
+            <div class="col-4 text-center p-0" [class.likedBg]="first">
+                <i *ngIf="first" class="fa fa-heart cardCss text-white"></i>
+                <img *ngIf="!first" class="cardImg" [src]="song.path" alt="">
+            </div>
+            <div class="col-8 text-center cardCss bold"><small class="fw600">{{song.title}} <i *ngIf="last" class="fa fa-ellipsis-h text-success" aria-hidden="true"></i>
+            </small></div>
+        </div>
+    </div>
+</div>

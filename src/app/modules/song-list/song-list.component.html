@@ -1,0 +1,16 @@
+<div class="p-2">
+    <div *ngFor="let song of songList">
+        <div class="col-12 text-white">
+            <h5>{{song.title}}</h5>
+        </div>
+        <div class="row  text-white d-flex flex-row flex-nowrap overflow-auto">
+            <div class="col-5 m-0 lh-1" *ngFor="let item of song.songs">
+                <img [src]="item.path" class="imgStyle"> <br> <br>
+                <small>{{item.name}}</small><br>
+                <small>{{item.desc}}</small><br><br>
+            </div>
+
+        </div>
+    </div>
+
+</div>

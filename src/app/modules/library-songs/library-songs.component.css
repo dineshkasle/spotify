@@ -1,0 +1,21 @@
+.cardCss{
+    position: relative;
+top: 18%;
+}
+.card-height{
+    height: 50px;
+    background-color: #484545;
+color: white;
+padding-left: 0px;
+}
+.likedBg{
+    background-image: linear-gradient(to bottom right, #4d2db8, #cecec6);
+}
+.cardImg{
+    width: 60px;
+    height: 48px;
+}
+.fw600{
+    font-weight: 600;
+}
+

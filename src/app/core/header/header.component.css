@@ -1,0 +1,14 @@
+.fontStyle{
+    font-family: Georgia;
+}
+.bgNavColor{
+    background-image: linear-gradient(to bottom right, #4d2db8, #1a1a19);
+}
+.firstIconPadding{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.secondThirdIconPadding{
+    padding-left: 10px;
+    padding-right: 10px;
+}
