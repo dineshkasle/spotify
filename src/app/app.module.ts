@@ -9,6 +9,8 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { LibrarySongsComponent } from './modules/library-songs/library-songs.component';
 import { SongListComponent } from './modules/song-list/song-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './shared/services/api.service';
 
 const routes: Routes = [
   { path: 'home', component: DashboardComponent },
@@ -27,9 +29,10 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
