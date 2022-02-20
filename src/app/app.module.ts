@@ -15,6 +15,10 @@ import { ApiService } from './shared/services/api.service';
 const routes: Routes = [
   { path: 'home', component: DashboardComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'song',
+    loadChildren: () => import('./modules/lazy/lazy.module').then(m => m.LazyModule)
+  }
 ]
 
 @NgModule({

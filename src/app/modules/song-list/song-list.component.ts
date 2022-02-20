@@ -16,11 +16,16 @@ export class SongListComponent implements OnInit {
   }
 
   getSongs() {
-    
-    this.api.getRepos().subscribe((res)=>{
+    this.api.getRepos().subscribe((res) => {
       this.songList = res;
     })
   }
- 
+
+  openSong(title: string, item: object) {
+    let songDetails: any = item;
+    songDetails.title = title;
+    this.api.songInfo = songDetails;
+  }
+
 
 }

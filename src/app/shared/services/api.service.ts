@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
+  songInfo:object={};
   constructor(private http: HttpClient) { }
 
   getRepos(): Observable<any> {
